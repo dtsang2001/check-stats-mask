@@ -9,7 +9,7 @@ import { neynar } from 'frog/middlewares'
 const SITE_URL = "https://check-stats-mask.vercel.app/";
 
 export const app = new Frog({
-  title: 'Check Starts Enjoy',
+  title: 'Check Starts Masks',
   assetsPath: '/',
   basePath: '/api',
   ui: { vars },
@@ -51,11 +51,11 @@ function Content(weeklyAllowance:string, remainingAllowance:string, masks:string
                 <Row paddingLeft="12" height="2/7" > 
                   <Columns gap="8" grow> 
                     <Column alignVertical='bottom' width="3/7"> <Text>- Allowance: </Text> </Column>
-                    <Column width="4/7"> <Text align='right' color="blue" weight="900" size="20"> { weeklyAllowance } </Text> </Column>
+                    <Column width="4/7"> <Text align='right' color="red" weight="900" size="20"> { weeklyAllowance } </Text> </Column>
                   </Columns>
                   <Columns gap="8" grow> 
                     <Column alignVertical='bottom' width="3/7"> <Text>- Remaining: </Text> </Column>
-                    <Column width="4/7"> <Text color="blue" align='right'>{ remainingAllowance }</Text> </Column>
+                    <Column width="4/7"> <Text color="red" align='right'>{ remainingAllowance }</Text> </Column>
                   </Columns>
                 </Row>
                 <Divider />
@@ -63,11 +63,11 @@ function Content(weeklyAllowance:string, remainingAllowance:string, masks:string
                 <Row paddingLeft="12" height="3/7" > 
                   <Columns gap="8" grow> 
                     <Column alignVertical='bottom' width="3/7"> <Text>- Rank: </Text> </Column>
-                    <Column width="4/7"> <Text color="blue" align='right' weight="900" size="20"> { rank } </Text> </Column>
+                    <Column width="4/7"> <Text color="red" align='right' weight="900" size="20"> { rank } </Text> </Column>
                   </Columns>
                   <Columns gap="8" grow> 
                     <Column alignVertical='bottom' width="5/7"> <Text>- Balance: </Text> </Column>
-                    <Column width="2/7"> <Text color="blue" align='right'>{ masks }</Text> </Column>
+                    <Column width="2/7"> <Text color="red" align='right'>{ masks }</Text> </Column>
                   </Columns>
                 </Row>
               </Rows>

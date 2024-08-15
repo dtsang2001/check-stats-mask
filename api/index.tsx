@@ -6,7 +6,7 @@ import { serveStatic } from 'frog/serve-static'
 import { handle } from 'frog/vercel'
 import { neynar } from 'frog/middlewares'
 
-const SITE_URL = "https://check-stats-enjoy.vercel.app/";
+const SITE_URL = "https://check-stats-mask.vercel.app/";
 
 export const app = new Frog({
   title: 'Check Starts Enjoy',
